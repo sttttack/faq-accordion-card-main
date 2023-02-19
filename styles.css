@@ -62,9 +62,10 @@ html {
 
 .panel {
     display: none;
+
 }
 
-.arrow {
+#arrow {
     position: absolute;
     left: 313px;   
 }
@@ -84,6 +85,10 @@ p {
     font-size: 13px;
     line-height: 18px;
     margin-bottom: 5px;
+}
+
+.question:hover {
+    color: #F47B56;
 }
 
 
@@ -129,12 +134,24 @@ p {
         border-color: #E8E8EA;
     }
 
-    .arrow {
+    #arrow {
         left: 340px;
+        
+    }
+
+    .arrow_active {
+        transform: rotate(180deg);
+        transition: 1s;
+    }
+
+    .arrow_dis {
+        transform: rotate(0deg);
+        transition: 1s;
     }
 
     .active {
         font-weight: bold;
+
     }
 
     p {
@@ -143,4 +160,5 @@ p {
         line-height: 18px;
         margin-bottom: 10px;
     }
+
 }
